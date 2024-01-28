@@ -1,0 +1,11 @@
+insert into user(name,email,phone) values ("Vader","vader@gmail.com","1234567890") , ("Leia","leia@gmail.com","1230456789") , ("Obi-Wan","obiwan@gmail.com","1234506789");
+select * from user;
+insert into tweet(userid,content) values (1,"I find your lack of faith disturbing.");
+select * from tweet;
+insert into likes(userid,tweetid) values (2,1);
+select * from likes;
+insert into tweet(userid,content,original_tweetid_for_retweet) values (3,"I find your lack of faith disturbing.",1);
+insert into follow(follower_userid,following_userid) values (2,1) , (1,3);
+select * from follow;
+insert into tweet(userid,content) values (3,"The Force will be with you. Always.");
+insert into tweet(userid,content,parent_tweetid_for_comment) values (2,"Help me, Obi-Wan Kenobi. You’re my only hope.",3);
