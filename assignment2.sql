@@ -4,7 +4,7 @@ insert into tweet(userid,content) values (1,"I find your lack of faith disturbin
 select * from tweet;
 insert into likes(userid,tweetid) values (2,1);
 select * from likes;
-insert into tweet(userid,content,original_tweetid_for_retweet) values (3,"I find your lack of faith disturbing.",1);
+insert into tweet(userid,original_tweetid_for_retweet) values (3,1);
 insert into follow(follower_userid,following_userid) values (2,1) , (1,3);
 select * from follow;
 insert into tweet(userid,content) values (3,"The Force will be with you. Always.");
